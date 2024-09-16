@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Detail</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="icon" href="picture/logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="https://l9xphuc.github.io/DSTeam/" class="logo-team">
+            <img src="picture/logo.png" alt="Logo Team">
+        </a>
+        <a href="https://l9xphuc.github.io/DSTeam/" class="team-name">
+            <h1>Death Squad Team</h1>
+        </a>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Game info (body) -->
+        <section class="game-info">
+            <div class="game-name" id="game-name"></div>
+            <img src="" alt="Game Image" id="game-image" class="game-image">
+            <div class="game-description" id="game-description"></div>
+
+            <!-- Cấu hình -->
+            <div class="game-requirements">
+                <h3>MINIMUM</h3>
+                <div class="min-req" id="min-req">
+                    <h3>MINIMUM</h3>
+                </div>
+                <H3>RECOMMENDED</H3>
+                <div class="rec-req" id="rec-req">
+                    <h3>RECOMMENDED</h3>
+                </div>
+            </div>
+
+            <!-- Link Download -->
+            <div class="game-download">
+                <h3>Link tải về</h3>
+
+                <!-- New Version -->
+                <div class="download-version" id="new-version">
+                    <h4>Bản mới nhất</h4>
+                    <ul id="new-version-links"></ul>
+                </div>
+
+                <!-- Old Version -->
+                <div class="download-version" id="old-version">
+                    <h4>Bản cũ(tải ở trên thì không cần)</h4>
+                    <ul id="old-version-links"></ul>
+                </div>
+
+                <!-- Update For Old Version -->
+                <div class="update-old-version" id="update-old-version">
+                    <h4>Update cho bản cũ</h4>
+                    <ul id="update-links"></ul>
+                </div>
+                <div id="vietnamese-link"></div>
+            </div>
+        </section>
+
+        <!-- Sidebar game information -->
+        <aside class="game-sidebar">
+            <ul>
+                <li><strong>Phát hành:</strong> <span id="release-date"></span></li>
+                <li><strong>Cập nhật:</strong> <span id="update-date"></span></li>
+                <li><strong>Phiên bản:</strong> <span id="version"></span></li>
+                <li><strong>Nhà phát triển:</strong> <a href="" id="dev-link">Tên nhà phát triển</a></li>
+                <li><strong>Xuất bản:</strong> <a href="" id="pub-link">Tên nhà xuất bản</a></li>
+                <li><strong>Multiplayer:</strong> <span id="multiplayer"></span></li>
+            </ul>
+        </aside>
+    </div>
+    <script src="js/detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ /* Header cố định ở trên cùng */
+ header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Header luôn ở trên cùng */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+ }
+ 
+ .logo-team img {
+    height: 50px;
+ }
+ 
+ .team-name {
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+ }
+ 
+ .team-name h1 {
+    font-size: 24px;
+ }
+ 
+ /* Container với padding để tránh header */
+ .container {
+    display: flex;
+    padding: 100px 20px 20px 20px; /* Thêm khoảng trống trên để không che header */
+    justify-content: space-between;
+ }
+ 
+ /* Game info */
+ .game-info {
+    flex: 2;
+    padding-right: 20px;
+ }
+ 
+ .game-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+ }
+ 
+ .game-description {
+    margin-top: 20px;
+ }
+ 
+ .game-requirements {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 150px;
+ }
+ 
+ .min-req, .rec-req {
+    width: 48%;
+    margin-top: 20px;
+    margin-left: -85px;
+ }
+ 
+ .min-req ul, .rec-req ul {
+    list-style-type: none;
+    padding-left: 0;
+ }
+ 
+/* Căn giữa toàn bộ phần Link Download */
+.game-download {
+    margin-top: 20px;
+    text-align: center; /* Căn giữa toàn bộ nội dung */
+ }
+ 
+ .download-version, .update-old-version {
+    margin-bottom: 20px;
+ }
+ 
+ .download-version h4, .update-old-version h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+ }
+ 
+ .download-version p, .update-old-version p {
+    font-size: 14px;
+    color: #666;
+ }
+ 
+ /* Căn giữa link download */
+ .download-version ul, .update-old-version ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center; /* Căn giữa các liên kết */
+ }
+ 
+ .download-version li, .update-old-version li {
+    margin-top: 5px;
+ }
+ 
+ .download-version a, .update-old-version a {
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block; /* Đảm bảo liên kết giữ nguyên là một khối ngang */
+    padding: 10px 20px; /* Thêm padding cho liên kết */
+    background-color: #f4f4f4; /* Thêm nền màu nhạt cho liên kết */
+    border-radius: 5px; /* Bo góc liên kết */
+ }
+ 
+ .download-version a:hover, .update-old-version a:hover {
+    text-decoration: underline;
+ }
+  
+ /* Sidebar với vị trí cố định khi cuộn */
+ .game-sidebar {
+    flex: 1;
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky; /* Sidebar sẽ "dính" theo vị trí cuộn */
+    top: 100px; /* Đảm bảo nó không đè lên header */
+ }
+ 
+ .game-sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+ }
+ 
+ .game-sidebar li {
+    margin-bottom: 10px;
+ }
+ 
+ .game-sidebar a {
+    color: blue;
+    text-decoration: none;
+ }
+ 
+ .game-sidebar a:hover {
+    text-decoration: underline;
+ }
+ 
+ #game-requirements h3{
+   display: block;
+ }
